@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>eternal sunshine</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: cornsilk;
+            }
+            header {
+                background-color: cadetblue;
+                padding: 20px;
+                text-align: center;
+                font-size: 30px;
+                color:floralwhite;
+                
+            }
+            h1 {
+                font-size: 50px;
+                padding-top: 200px;
+                padding-left: 50px;
+            }
+            nav { 
+                float:inline-start
+                width: 30%;
+                font-size: 30px;
+                height: 400px;
+                padding: 10px;
+            }
+            article {
+                float: inline-start;
+                border: 5px sandybrown;
+                padding: 10px;
+                padding-left: 10px;
+                margin: 0 auto;
+                font-size: 30px;
+            } 
+            dt {
+                font-size: larger;
+                font-weight: 500;
+                font-style: normal;
+            }
+            footer {
+                padding: 30px;
+                text-align: center;
+                font-size: 20px;
+                color:rgb(50, 18, 231);
+            }
+            video {
+                padding 50px;
+            }
+            audio {
+                padding-top: 50px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="w3-container">
+        <header>Kozlovski Konstantin 353-irm</header>
+        <h1>The list of the questions:</h1>
+    </div>
+    <section>
+            <nav>
+                <p style="list-style: circle;">
+                    <li><a href="#Q1">Question 1</a></li>
+                    <li><a href="#Q2">Question 2</a></li>
+                    <li><a href="#Q3">Question 3</a></li>
+                    <li><a href="#Q4">Question 4</a></li>
+                    <li><a href="#Q5">Question 5</a></li>
+                    <li><a href="#Q6">Question 6</a></li>
+                </p>
+                </nav>
+
+            <article>
+                <div class="w3-container">
+                <dl>
+                    <dt id="Q1">When HTML5 has become a standard? What were the main reasons for developing new standard?</dt>
+                    <dd>HTML5 became a standard in October 2014, according to Wikipedia. Its objectives were to improve the language with support for new multimedia and other new features to keep the language both easily readable by humans and consistently understood by computers and devices such as web browsers, parsers, and so on. The main reasons for developing are promotion of semantic markup, keeping design and content separate, reduction of the interdependence of HTML, CSS, and JavaScript and promotion of design responsiveness and convenience.</dd>
+                    <dt id="Q2">What is a difference between W3C HTML5 and WHATWG HTML Living Standard?</dt>
+                    <dd>W3C describes the main element as the main content of the page, allowing only one main element per doc, while WHATWG assigns no specific semantic value to the main element and allows multiple main elements within a doc. The hgroup element is used to group a set of one or more h1-h6 elements. W3C removed it die to lack of implementation, WHATWG still includes it. </dd>
+                    <dt id="Q3">What is the minimal HTML page code?</dt>
+                    <dd>The minimal HTML page code includes the doctype declaration, html, head, and body tags with a title in the head section and a heading element in the body section. </dd>
+                    <dt id="Q4">Comment on semantic and presentational markup. Why presentational markup is considered deprecated now?</dt>
+                    <dd>Semantic markup refers to the practice of using HTML elements that accurately describe the content and purpose of the information they contain. This approach aims to make the HTML code more readable, maintainable, and understandable, both for developers and for assistive technologies like screen readers. Presentational markup, on the other hand, involves using HTML elements primarily for styling purposes, rather than to convey meaning or structure. Presentational markup is considered deprecated now because it blurs the distinction between content and presentation, making the code harder to understand and maintain. </dd>
+                    <dt id="Q5">How you can check browser support for particular tag or attribute?</dt>
+                    <dd>For instance, you can check Modernizr from https://modernizr.com/ and download it as the support for a particular HTML tag. At the time of writing, the website asks you to pick the features you want to detect. Modernizr provides a wide range of solutions for web designers and developers to take advantage of the new features of HTML5 and CSS3 as well, despite the different browser support. </dd>
+                    <dt id="Q6">What are the audio and video formats, officially supported by HTML standard? What happens if you use other format?</dt>
+                    <dd>HTML supports various media elements such as audio or video. It uses media tags such as audio, video, source, embed and track to include media files in HTML documents. Multimedia files can be in different formats (example- MP3, MP4, WEBM) which can be identified by looking at the extension of these files. Among all the available formats of these files, only some of them are supported by HTML standards. If you use an audio or video format that is not supported by the HTML standard, there will display an error message indicating that this format is not supported.  </dd><br>
+                        <video width="500" controls>
+                            <source src="https://web.archive.org/web/20200326203351oe_/https://r1---sn-a5msen7s.googlevideo.com/videoplayback?expire=1585276388&ei=hBF9XqPNL92AsfIP242CgA4&ip=207.241.231.174&id=o-AET9r_siv2QcUn2Gxb1wKeoukwD3m_zwskTyhK5FPHsO&itag=22&source=youtube&requiressl=yes&vprv=1&mime=video%2Fmp4&ratebypass=yes&dur=924.943&lmt=1541346871356180&fvip=1&c=WEB&txp=5431432&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cratebypass%2Cdur%2Clmt&sig=ADKhkGMwRAIgNsmJUbekUWImqxMrXOsSOzXH5tWbmtGl6RV-k2m0qDMCICEMNi_Ih9MA0tkmRFu0y1PZvGbXTXJBxiiAX61OEduF&video_id=YBJfkmIUEeo&redirect_counter=1&cm2rm=sn-n4vey7e&req_id=1381cb5b42eea3ee&cms_redirect=yes&mh=_j&mm=34&mn=sn-a5msen7s&ms=ltu&mt=1585254686&mv=m&mvi=0&pl=20&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=ABSNjpQwRAIgRYsghXB0a_x17d8vSo9EF6k0v4YkGYZgSE6NYbwP9rcCICHT5E92RSBhiIqINOviPm66UfDS4aGTfWei1ogbuIjy" type="video/MP4">
+                            <source src="https://web.archive.org/web/20200326203351oe_/https://r1---sn-a5msen7s.googlevideo.com/videoplayback?expire=1585276388&ei=hBF9XqPNL92AsfIP242CgA4&ip=207.241.231.174&id=o-AET9r_siv2QcUn2Gxb1wKeoukwD3m_zwskTyhK5FPHsO&itag=22&source=youtube&requiressl=yes&vprv=1&mime=video%2Fmp4&ratebypass=yes&dur=924.943&lmt=1541346871356180&fvip=1&c=WEB&txp=5431432&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cratebypass%2Cdur%2Clmt&sig=ADKhkGMwRAIgNsmJUbekUWImqxMrXOsSOzXH5tWbmtGl6RV-k2m0qDMCICEMNi_Ih9MA0tkmRFu0y1PZvGbXTXJBxiiAX61OEduF&video_id=YBJfkmIUEeo&redirect_counter=1&cm2rm=sn-n4vey7e&req_id=1381cb5b42eea3ee&cms_redirect=yes&mh=_j&mm=34&mn=sn-a5msen7s&ms=ltu&mt=1585254686&mv=m&mvi=0&pl=20&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=ABSNjpQwRAIgRYsghXB0a_x17d8vSo9EF6k0v4YkGYZgSE6NYbwP9rcCICHT5E92RSBhiIqINOviPm66UfDS4aGTfWei1ogbuIjy" type="video/ogg">
+                        </video>
+                        <audio controls>
+                            <source src="https://wikiway.com/upload/iblock/17f/LitvaAnthem.mp3" type="audio/mpeg">
+                            <source src="https://wikiway.com/upload/iblock/17f/LitvaAnthem.mp3" type="audio/ogg">
+                        </audio>
+                </dl>
+            </div>
+            </article>
+        </section>
+        <footer class="w3-container w3-teal">
+            <p>Almost everything working with HTML was clear with the help of sources that you provided with. I learned how to create a web-site using html, design it with css and so on.</p>
+            <img src="C:\Users\Admin\Desktop\logosbbsu.jpg" alt="logosbbsu">
+        </footer>
+    </body>
+</html>
