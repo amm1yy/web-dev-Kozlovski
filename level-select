@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>funny monkey</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <img src="38.png" usemap="#monkey" width="1880" height="1600">
+        <map name="monkey">
+            <area
+            shape="circle"
+            coords="166, 1020, 69"
+            href="file:///C:/Users/Admin/Desktop/Kozlouski-Konstantin-PW2/level1.html" />
+            <area
+            shape="circle"
+            coords="1690, 1020, 69"
+            href="file:///C:/Users/Admin/Desktop/Kozlouski-Konstantin-PW2/final-boss.html" />
+        </map>
+    </body>
