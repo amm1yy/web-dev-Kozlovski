@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Practical work 5</title>
+        <style>
+            body {
+                background-color: rgb(140, 241, 241);
+            }
+            h1 {
+                font-size: 80px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                text-align: center;
+                padding: 20px;
+                margin: 20px;
+            }
+            nav ul {
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none;
+                padding: 0; 
+                margin: 0;
+                overflow: hidden;
+                background-color: rgb(0, 9, 87);
+            }
+            nav li {
+                float: left;
+                border-right: 2px solid #ffffff;
+                flex-grow: 1;
+            }
+            nav li a {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+                font-size: medium;
+                display: block;
+                color: rgb(186, 250, 255);
+                text-align: center;
+                padding: 20px;
+            }
+            li a:hover:not(.active) {
+                background-color: rgb(143, 130, 255)
+            }
+
+            h2 {
+                font-size: 40px;
+                font-style: italic;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 30px;
+            }
+
+            h3 {
+                font-size: 40px;
+                font-style: italic;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 30px; 
+            }
+            h4 {
+                padding-left: 20%;
+                padding-right: 20%;
+                font-size: 40px;
+                font-style: italic;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 30px;   
+            }
+            p {
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 200;
+                text-align: center;
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+            footer {
+                background-color: rgb(183, 150, 214);
+                padding: 30px;
+            }
+
+            </style>
+            </head>
+            <body>
+               <header>
+                <h1>Report by Konstantin Kozlouski from 353 group</h1>
+                <nav>
+                <ul>
+                    <li><a href="#question_a">Box model in CSS</a></li>
+                    <li><a href="#question_b">Clearfix hack</a></li>
+                    <li><a href="#question_c">Margin collapse. Auto and negative margin values</a></li>
+                    <li><a href="#question_d">The problem with achieving Holy Grail layout</a></li>
+                    <li><a href="#question_e">Modern ways to achieve Holy Grail layout</a></li>
+                </ul>
+                </nav>
+               </header>
+
+               <main>
+                <article>
+                    <h2 id="question_a">What is a box model in CSS. Give box-sizing property definition</h2>
+                    <p>The CSS box model defines the layout of elements on a webpage, consisting of content, padding, borders, and margins. The box-sizing property in CSS determines whether an element's width and height include padding and borders or just the content for instance content-box.</p>
+                    <div style="text-align: center;">
+                    <img src="CSSBoxModel1.png" width="700" height="400"><br><br><br>
+                    <img src="CSSBoxModel2.png" width="450" height="350">
+                    </div>
+                    <h3 id="question_b">What is a “clearfix hack” and when does it need to be applied</h3>
+                    <p>The clearfix hack in CSS is like a trick to make sure a box holds all its floating things inside without collapsing.When floated elements are contained within a parent element, the parent element often collapses because it no longer recognizes the floated elements' heights.</p>
+                    <div style="text-align: center;">
+                    <img src="TheClearfixHack.png" width="700" height="400">
+                    </div>
+                    <h3 id="question_c">What is a “margin collapse” and what are the use cases for margin: auto and negative margin values</h3>
+                    <p>Margin collapse happens when the top and bottom margins of adjacent elements blend together, making them appear as one. Setting <margin: auto> helps center a box horizontally within its container, while negative margin values adjust its position or create overlaps in the layout.</p>
+                    <div style="text-align: center;">
+                    <img src="marginn.png" width="450" height="350">
+                    </div>
+                    <h3 id="question_d">What was the problem with achieving Holy Grail layout</h3>
+                    <p>The challenge with achieving the Holy Grail layout was creating a webpage layout with a header, footer, and three fluid columns of content while maintaining equal column heights and cross-browser compatibility.</p>
+                    <h3 id="question_e">What are the modern ways to achieve Holy Grail layout</h3>
+                    <p>Modern ways to achieve the Holy Grail layout include using CSS Flexbox or CSS Grid, which provide more flexible and efficient approaches to creating complex layouts compared to traditional methods like floats and positioning. These newer techniques offer better support for equal height columns, responsive design, and cross-browser compatibility.</p>
+                </article>
+                <footer>
+                    <p>Kozlouski Konstantin</p>
+                    <p>Web-design</p>
+                    <p>13th of May, 2024</p>
+                    <p>It's Monday outside</p>
+                    <p>My house</p>
+                    <p><a href="https://acncuc.medium.com/a-simple-css-horizontal-navigation-bar-using-inline-block-c507c581db69">A Simple CSS Horizontal Navigation Bar Using inline-block</a></p>
+                </footer>
+                </main>
+            </body>
+</html>
+
