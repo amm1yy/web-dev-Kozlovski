@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <title>Calculator</title>
+    <style>
+        body {
+            background-color: azure;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        .calculator {
+            margin:30px;
+            padding:30px;
+            border: 3px solid black;
+        }
+        .owl-carousel .item {
+            text-align: center;
+            padding: 15px;
+        }
+  </style>
+</head>
+    <body>
+        <h1>Calculator</h1>
+        <form class="calculator">
+            <label for="number1">The first number is</label><br>
+            <input type="number" id="number1" value="0"><br>
+            <label for="number2">The second number is</label><br>
+            <input type="number" id="number2" value="0"><br><br>
+            <div class="operation">
+                <label for="operation">Operation is</label>
+                <select id="operation">
+                    <option value="+">Addition</option>
+                    <option value="-">Subtraction</option>
+                    <option value="*">Multiplication</option>
+                    <option value="/">Division</option>
+                </select>
+            </div>
+                <button type="button" onclick="performCalculation()">Calculate</button>
+                <button type="reset">Reset</button>
+                <div class="theresult">
+                    <label for="result">Result: </label>
+                    <output id="result"></output>
+                </div>
+          </form>
+        <div class="owl-carousel">
+            <div class="item">
+                <h2>Explain “repaint” and “reflow” of the webpage.</h2>
+                      <p>Repaint and reflow are two processes that happen when a web page changes. Repaint is when the browser updates the colors and styles of elements, like when you hover over a button and it changes color. Reflow is when the browser recalculates the layout of elements on the page, which can happen when you resize the window or add/remove content, like when a new paragraph is added and the surrounding text adjusts to fit.</p>
+                    </div>
+            <div class="item">
+                <h2>How does JavaScript on the webpage affects the page load speed and performance?</h2>
+                      <p>JavaScript affects page load speed and performance by requiring parsing and execution time, potentially blocking rendering, triggering reflows and repaints, and increasing network requests. To optimize, minimize and optimize JavaScript files, prioritize critical rendering paths, and utilize modern JavaScript features.</p>
+                    </div>
+            <div class="item">
+                <h2>What is “minification” of the script? Why it is useful to minify your scripts?</h2>
+                      <p>Minification of a script involves removing unnecessary characters and whitespace to reduce its size. This optimization improves page load speed by reducing download times and bandwidth usage. Additionally, minification enhances security by obfuscating the code, making it harder to reverse engineer.</p>
+                    </div>
+            <div class="item">
+                <h2>What is a JS Web Worker and when do we need it?</h2>
+                      <p>A JS Web Worker is a separate background thread that allows parallel execution of scripts. It's useful for performing tasks like data processing or real-time calculations without blocking the main thread, enhancing the responsiveness and performance of web applications.</p>
+            <div class="item">
+                <h2>Sources</h2>
+                        <ul>
+                            <li><p><a href=https://www.w3schools.com/html/html_forms.asp>First source</a></p></li>
+                            <li><p><a href=https://www.w3schools.com/js/js_variables.asp>Second source</a></p></li>
+                            <li><p><a href=https://developer.mozilla.org/en-US/docs/Web/CSS/background-colohttps://owlcarousel2.github.io/OwlCarousel2/docs/started-installation.html>Third source</a></p></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 3 },
+      1000: { items: 5 }
+    }
+  });
+});
+</script>
+                        <script>
+                function calculate(number1, operation, number2) {
+              switch(operation) {
+                case '+':
+                  return number1 + number2;
+                case '-':
+                  return number1 - number2;
+                case '*':
+                  return number1 * number2;
+                case '/':
+                  if(number2 != 0) {
+                    return number1 / number2;
+                  } else {
+                    return "Error: Division by zero is not allowed.";
+                  }
+                default:
+                  return "Error: Invalid operator.";
+              }
+            }
+            
+            function performCalculation() {
+              var number1 = parseFloat(document.getElementById('number1').value);
+              var operation = document.getElementById('operation').value;
+              var number2 = parseFloat(document.getElementById('number2').value);
+              var result = calculate(number1, operation, number2);
+              document.getElementById('result').value = "It will be " + result;
+            }
+            </script>
+    </body>
+</html>
